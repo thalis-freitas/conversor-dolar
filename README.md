@@ -1,6 +1,6 @@
 # Conversor de Moedas 
 
-Conversor de moedas entre dolar e real criado utilizando html, css e javascript utilizando o método fetch para acessar o valor atualizado do dolar. 
+Conversor de moedas entre dolar e real criado com html, css e javascript utilizando o método fetch para acessar o valor atualizado do dolar. 
 
 Link: https://thalis-freitas.github.io/conversor-dolar/
 
