@@ -35,6 +35,10 @@ input {
     font-size: 1.3em;
 }
 
+input[type=number]{
+    background-color: white;
+}
+
 input[type=button]{
     color: white;
     background-color: #0ea269;
@@ -100,6 +104,7 @@ a > img{
         margin: auto;
         margin-top: 20px;
     }
+
 }
 
 @media screen and (max-width: 315px){
