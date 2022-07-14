@@ -61,7 +61,7 @@ function converterParaReal() {
             let valorConvertido = valor * dolar
 
             if (valor <= 0) {
-                alert("Por favor insira um valor positivo para realizar a conversão")
+                alert("Por favor insira um valor positivo para converter")
             }
             else {
                 conteudoResultado = ` $${valor} = R$${(valorConvertido).toFixed(2)}`
@@ -88,7 +88,7 @@ function converterParaDolar() {
             let valorConvertido = valor / dolar
 
             if (valor <= 0) {
-                alert("Por favor insira um valor positivo para realizar a conversão")
+                alert("Por favor insira um valor positivo para converter")
             } else {
                 conteudoResultado = `R$${valor} = $${(valorConvertido).toFixed(2)}`
                 resultado.innerHTML = conteudoResultado
