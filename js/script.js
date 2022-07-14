@@ -40,6 +40,8 @@ onload = () => {
             let dolar = parseFloat(respostaDolar).toFixed(2)
             dolarHoje.innerHTML = `Dolar hoje = R$${dolar}`
         })
+        .catch(() => {
+            dolarHoje.innerHTML = `Ops, ocorreu um erro...`})
 }
 
 function converterParaReal() {
