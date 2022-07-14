@@ -80,7 +80,7 @@ form div{
 
 footer{
     position: fixed;
-    top: 92vh;
+    bottom: 10px;
     width: 100%;
     text-align: center;
 }
