@@ -80,7 +80,7 @@ form div{
 
 footer{
     position: fixed;
-    top: calc(100vh - 44px);
+    top: 92vh;
     width: 100%;
     text-align: center;
 }
@@ -105,12 +105,6 @@ a > img{
         margin-top: 20px;
     }
 
-}
-
-@media screen and (max-width: 315px){
-    footer{
-        top: calc(100vh - 68px);
-    }
 }
 
 @media screen and (min-width: 600px){
