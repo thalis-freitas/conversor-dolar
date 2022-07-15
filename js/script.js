@@ -38,7 +38,7 @@ onload = () => {
         .then((dados) => {
             let respostaDolar = (dados.USDBRL.ask)
             let dolar = parseFloat(respostaDolar).toFixed(2)
-            dolarHoje.innerHTML = `Dolar hoje = R$${dolar}`
+            dolarHoje.innerHTML = `Dólar hoje = R$${dolar}`
         })
         .catch(() => {
             dolarHoje.innerHTML = `Ops, ocorreu um erro...`})
