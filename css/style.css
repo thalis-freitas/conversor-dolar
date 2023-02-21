@@ -1,27 +1,25 @@
 *{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #333131;
-    color: white;
-    position: relative;
+    background: #333131;
+    color: #fff;
 }
 
-#data{
+#date{
     padding: 5px;
     font-size: 1.4em;
     font-family: 'Edu NSW ACT Foundation', cursive;
     text-align: right;
 }
 
-#dolar-hoje{
+#dollar-today{
     padding: 10px;
-    background-color: white;
-    color: black;
+    background: #fff;
+    color: #000;
     margin: auto;
     text-align: center;
     margin: 20px;
@@ -36,27 +34,25 @@ input {
 }
 
 input[type=number]{
-    background-color: white;
+    background: #fff;
 }
 
 input[type=button]{
-    color: white;
-    background-color: #0ea269;
+    color: #fff;
+    background: #0ea269;
     border: 1px solid #0ea269;
     cursor: pointer;
-    transition: background-color 1s 0s ease-in-out, border-color 1s 0s ease-in-out;
-    text-align: center;
+    transition: background-color 1s ease-in-out;
 }
 
 input[type=button]:hover{
-    background-color: #076d44;   
+    background: #076d44;   
     border-color: #076d44;
 }
 
 form{
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 80px;
 }
 
 form p{
@@ -70,12 +66,8 @@ h2{
 }
 
 form div{
-    border: 1px solid white;
-    padding: 10px, 0;
     text-align: center;
-    box-shadow: 0 0 24px white;
-    border: none;
-    max-width: 45%;
+    box-shadow: 0 0 24px #fff;
 }
 
 footer{
@@ -86,7 +78,7 @@ footer{
 }
 
 a, a:visited{
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -108,7 +100,6 @@ a > img{
 }
 
 @media screen and (min-width: 600px){
-
     form div{
         margin-top: 10px;
     }

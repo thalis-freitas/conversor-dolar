@@ -1,7 +1,6 @@
-let data = document.getElementById("data")
+let date = document.getElementById("date")
 let dataAtual = new Date()
 
-// Formatação as datas para que sejam passadas em português
 var dias = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"]
 
 var meses = [
@@ -21,14 +20,12 @@ if (horas < 10 && horas > 0) horas = "0" + horas
 if (horas == 0) horas = "00"
 if (diaMes < 10) diaMes = "0" + diaMes
 
-data.innerHTML = ` ${diaSemana}, ${diaMes} de ${mes} de ${ano}, ${horas}:${minutos}`
+date.innerHTML = ` ${diaSemana}, ${diaMes} de ${mes} de ${ano}, ${horas}:${minutos}`
 
-// link para receber o valor atualizado do dolar
 let url = "https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL"
 
-let dolarHoje = document.getElementById("dolar-hoje")
+let dolarHoje = document.getElementById("dollar-today")
 
-// função para mostrar o valor atual do dolar sempre que a página for atualizada 
 onload = () => {
 
     fetch(url)
@@ -46,7 +43,7 @@ onload = () => {
 
 function converterParaReal() {
 
-    let inputDolar = document.getElementById("input-dolar")
+    let inputDolar = document.getElementById("input-dollar")
     let valor = inputDolar.value
 
     fetch(url)
@@ -57,7 +54,7 @@ function converterParaReal() {
             let respostaDolar = (dados.USDBRL.ask)
             let dolar = parseFloat(respostaDolar).toFixed(2)
 
-            let resultado = document.getElementById("resultado-real")
+            let resultado = document.getElementById("real-result")
             let valorConvertido = valor * dolar
 
             if (valor <= 0) {
@@ -84,7 +81,7 @@ function converterParaDolar() {
             let respostaDolar = (dados.USDBRL.ask)
             let dolar = parseFloat(respostaDolar).toFixed(2)
 
-            let resultado = document.getElementById("resultado-dolar")
+            let resultado = document.getElementById("dollar-result")
             let valorConvertido = valor / dolar
 
             if (valor <= 0) {
@@ -98,8 +95,8 @@ function converterParaDolar() {
 
 }
 
-let btnConverterParaReal = document.getElementById("converter-para-real")
+let btnConverterParaReal = document.getElementById("convert-to-real")
 btnConverterParaReal.addEventListener("click", converterParaReal)
 
-let btnConverterParaDolar = document.getElementById("converter-para-dolar")
+let btnConverterParaDolar = document.getElementById("convert-to-dollar")
 btnConverterParaDolar.addEventListener("click", converterParaDolar)

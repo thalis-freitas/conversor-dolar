@@ -1,52 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./imagens/icone-moeda.png">
-    <title>Conversor de moedas
-    </title>
+    <title>Conversor de moedas</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Patua+One&family=Poppins&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Patua+One&family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <p id="data"></p>
-        <div id="dolar-hoje"></div>
+        <p id="date"></p>
+        <div id="dollar-today"></div>
     </header>
     <form>
-
-        <div id="dolar-para-real">
-
+        <div>
             <p>Dólar para real</p>
-
-            <input type="number" id="input-dolar" placeholder="$">
-            <input type="button" id="converter-para-real" value="converter">
-            <h2 id="resultado-real"> </h2>
+            <input type="number" id="input-dollar" placeholder="$">
+            <input type="button" id="convert-to-real" value="converter">
+            <h2 id="real-result"> </h2>
         </div>
-        <div id="real-para-dolar">
+        <div>
             <p>Real para dólar</p>
-
             <input type="number" id="input-real" placeholder="R$">
-            <input type="button" id="converter-para-dolar" value="converter">
-            <h2 id="resultado-dolar"> </h2>
+            <input type="button" id="convert-to-dollar" value="converter">
+            <h2 id="dollar-result"> </h2>
         </div>
     </form>
 
-    <footer><a href="https://github.com/Thalis-Freitas" target="_blank"><img src="./imagens/icone-github.png"
-                alt="github">
-            <span> Desenvolvido por: <b>Thalis Freitas </b> </span> </a>
+    <footer>
+        <a href="https://github.com/Thalis-Freitas" target="_blank">
+            <img src="./imagens/icone-github.png" alt="logo-github">
+            <span> Desenvolvido por: 
+                <b>Thalis Freitas </b> 
+            </span> 
+        </a>
     </footer>
-
-
+    <script src="./js/script.js"></script>
 </body>
-<script src="./js/script.js"></script>
-
 </html>
